@@ -6,7 +6,6 @@ var count = 0;
 
   var blackScreen = document.getElementById('black-screen');
   var modalBlock = document.getElementById('modal-block');
-  var modalBlockBodys = document.getElementById('modal-content');
 
   var addButton = document.getElementById('addButton');
   var newTaskWrap = document.getElementById('new-task-wrap');
@@ -15,20 +14,10 @@ var count = 0;
   var taskTitle = document.getElementById('task-title');
   var taskDiscription = document.getElementById('task-discription');
   var modalHeader = document.getElementById('modal-header');
-
-  var succesed = document.getElementById('succesed');
-  var defeated = document.getElementById('defeated');
   var mainContent = document.getElementById('main-content');
-
-  var toDo = document.getElementById('all');
-
-  var activeElements = document.getElementsByClassName('activeTask');
-  var succesElements = document.getElementsByClassName('inactiveTask');
 
   var taskName = [];
   var taskText = [];
-  var succesArray = [];
-
 
 
     firstGreenButton.addEventListener('click',modalShow);
