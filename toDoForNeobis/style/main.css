@@ -1,0 +1,171 @@
+*{padding: 0;margin: 0; outline: none;transition: all 0.2s ease-in-out;}
+body {
+    background: #455A64;
+}
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green-block {
+    width: 100%;
+    height: 100px;
+    background: #2EBC85;
+    position: absolute;
+    z-index:-1;
+}
+.main-wrap {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.main-wrap-block {
+    width: 93%;
+    height: 93%;
+    background: #546E7A;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    overflow: hidden;
+}
+.main-wrap-block-header {
+    width: 100%;
+    height: 70px;
+    background: #6B8794;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #263238;
+    justify-content: space-around;
+}
+.main-wrap-block-body {
+    height: calc(100% - 10%);
+    overflow-y: scroll;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main-wrap-block-body-block {
+    width: 48%;
+    height: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    box-sizing: border-box;
+}
+.main-wrap-block-body-block:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.add-task-button {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    background: #2EBC85;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 1000;
+}
+.add-task-button:hover {
+    background: rgb(27, 158, 108);
+}
+.black-screen{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    background-color: #00000085;
+    opacity: 1;
+}
+
+.modal-block {
+    z-index: 101;
+    width: 70%;
+    height: 80vh;
+    background: #607D8B;
+    position: absolute;
+    left: 15%;
+    top: 3%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.Inactive {
+    z-index: -2;
+    opacity: 0 !important;
+}
+.Inactive2 {
+    display: none;
+}
+.bg-color {
+    background: #009688;
+}
+.modal-block-container {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+.modal-block-container-h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0 15px 0;
+}
+.modal-block-container-input {
+    max-width: 99%;
+    min-width: 99%;
+    min-height: 30px;
+    max-height: 200px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #757575;
+    text-align: center;
+}
+.textarea {
+    min-height: 200px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 5px 0 0 5px;
+}
+.modal-block-container-button  {
+    width: 30%;
+    font-size: 16px;
+    height: 60px;
+    background: #D81B60;
+}
+.modal-block-container-button:hover {
+    background: rgb(185, 7, 72);
+}
+.task {
+    color: #bbbbbb;
+}
+.task-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+.succes {
+    left: 60%;
+    background: #00C853;
+}
+.succes:hover {
+    background: rgb(0, 153, 64);
+}
+.h100 {
+    height: 100%;
+    cursor: pointer;
+    transition: none;
+}
+.h100:hover {
+    color: #fff;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <title>To-Do</title>
+</head>
+<body>
+    <div class="black-screen Inactive" id="black-screen"></div>
+    <div class="modal-block Inactive" id="modal-block">
+        <div class="main-wrap-block-header all-center bg-color">
+            <p id="modal-header">Добавить новую задачу</p>
+        </div>
+        <div class="modal-block-container" id="modal-content">
+
+           <div id="new-task-wrap">
+           <h3 class="modal-block-container-h3">Название задачи</h3>
+           <input type="text" id="taskH1" class="modal-block-container-input">
+           <h3 class="modal-block-container-h3">Напишите по подробнее про задачу</h3>
+           <textarea type="text" id="taskP" class="modal-block-container-input textarea"></textarea>
+           <button class="add-task-button modal-block-container-button" id="addButton">
+            Добавить
+            </button>
+            </div>
+
+            <div id="show-task" class="Inactive2">
+            <h3 class="modal-block-container-h3" id="task-title">
+                
+            </h3>
+            <h3 class="modal-block-container-h3">
+                Описание задачи
+            </h3>
+            <p class="task-text" id="task-discription">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea repudiandae, atque tenetur incidunt asperiores corporis repellat sit error exercitationem, veniam praesentium iste nulla tempore eum. Dolore veritatis eligendi minus, ad quibusdam, dolor explicabo cum pariatur asperiores modi similique beatae neque. Vel architecto consequatur maxime in maiores, dolorem perferendis officia ab accusantium impedit cum vero eligendi. Accusamus at quos corporis!
+            </p>
+            <button class="add-task-button modal-block-container-button succes" id="succes">
+                Сделал(а)
+            </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="green-block"></div>
+    <div class="main-wrap all-center">
+        <div class="main-wrap-block">
+            <div class="main-wrap-block-header all-center">
+                <!-- <div id="defeated" class="h100 all-center">
+                    <p>Невыполненные</p>
+                </div> -->
+                <div id="all" class="h100 all-center">
+                    <p>To-Do</p>
+                </div>
+                <!-- <div id="succesed" class="h100 all-center">
+                    <p>Выполненные</p>
+                </div> -->
+            </div>
+            <div id="main-content" class="main-wrap-block-body all-center">
+                
+            </div>
+        </div>
+    </div>
+    <button class="add-task-button" id="firstGreenButton">
+        +
+    </button>
+    <script src="script/Chpokman.js"></script>
+</body>
+</html>
